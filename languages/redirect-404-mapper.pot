@@ -1,0 +1,54 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Redirect 404 Mapper 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-10 00:00:00+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: redirect-404-mapper.php
+msgid "404 Redirect Mapper"
+msgstr ""
+
+#: redirect-404-mapper.php
+msgid "404ページにアクセスされたURLをマッピングし、JavaScriptで指定先にリダイレクトする."
+msgstr ""
+
+#: redirect-404-mapper.php
+msgid "404アクセス時のURLとリダイレクト先URLを登録する."
+msgstr ""
+
+#: redirect-404-mapper.php
+msgid "404 URL (from)"
+msgstr ""
+
+#: redirect-404-mapper.php
+msgid "Redirect URL (to)"
+msgstr ""
+
+#: redirect-404-mapper.php
+msgid "Action"
+msgstr ""
+
+#: redirect-404-mapper.php
+msgid "Remove"
+msgstr ""
+
+#: redirect-404-mapper.php
+msgid "Add Rule"
+msgstr ""
+
+#: redirect-404-mapper.php
+msgid "Insufficient permissions to access this page."
+msgstr ""

@@ -1,0 +1,17 @@
+.git
+.gitignore
+.gitattributes
+.github
+.wordpress-org
+node_modules
+vendor
+composer.lock
+package-lock.json
+yarn.lock
+.DS_Store
+*.zip
+*.tar.gz
+*.bak
+.env
+.env.local
+README.md
