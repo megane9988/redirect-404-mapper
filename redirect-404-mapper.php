@@ -81,7 +81,7 @@ if ( ! class_exists( 'Redirect_404_Mapper' ) ) {
 					continue;
 				}
 
-				$from = isset( $rule['from'] ) ? sanitize_text_field( wp_unslash( $rule['from'] ) ) : '';
+				$from = isset( $rule['from'] ) ? $this->sanitize_from_value( $rule['from'] ) : '';
 				$to   = isset( $rule['to'] ) ? esc_url_raw( wp_unslash( $rule['to'] ) ) : '';
 
 				if ( '' === $from || '' === $to ) {
@@ -249,6 +249,29 @@ if ( ! class_exists( 'Redirect_404_Mapper' ) ) {
 			}());
 			</script>
 			<?php
+		}
+
+		/**
+		 * Sanitize source URL value while preserving URL encoding.
+		 *
+		 * @param mixed $raw_from Raw source URL value.
+		 * @return string
+		 */
+		private function sanitize_from_value( $raw_from ) {
+			if ( ! is_scalar( $raw_from ) ) {
+				return '';
+			}
+
+			$from = trim( (string) wp_unslash( $raw_from ) );
+			if ( '' === $from ) {
+				return '';
+			}
+
+			$from = wp_kses_no_null( $from );
+			$from = wp_strip_all_tags( $from, false );
+			$from = str_replace( array( "\r", "\n", "\t" ), '', $from );
+
+			return trim( $from );
 		}
 
 		/**
